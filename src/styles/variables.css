@@ -1,0 +1,18 @@
+:root {
+  --bg: #050302;
+  --bg-soft: #0d0805;
+  --card: #140d09;
+
+  --cream: #fff4df;
+  --text: #d8c7ad;
+  --muted: #9f8c72;
+
+  --orange: #ff7a1a;
+  --gold: #d99b4c;
+  --red: #b63b24;
+
+  --border: rgba(255, 244, 223, 0.1);
+  --shadow: 0 30px 100px rgba(255, 122, 26, 0.16);
+
+  --container: 1180px;
+}

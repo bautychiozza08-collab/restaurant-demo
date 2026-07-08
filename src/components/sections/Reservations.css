@@ -1,0 +1,123 @@
+.reservations {
+  padding: 150px 24px;
+  background:
+    linear-gradient(rgba(5, 3, 2, .75), rgba(5, 3, 2, .9)),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.reservation-box {
+  display: grid;
+  grid-template-columns: 1.1fr .8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.reservation-content span {
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.reservation-content h2 {
+  font-size: 72px;
+  line-height: .95;
+  margin: 22px 0;
+}
+
+.reservation-content p {
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 620px;
+  margin-bottom: 38px;
+}
+
+.reservation-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.reserve-primary,
+.reserve-secondary {
+  padding: 17px 30px;
+  border-radius: 999px;
+  font-weight: 900;
+  transition: .3s;
+}
+
+.reserve-primary {
+  background: linear-gradient(135deg, var(--orange), var(--gold));
+  color: white;
+  box-shadow: var(--shadow);
+}
+
+.reserve-secondary {
+  border: 1px solid rgba(255,244,223,.18);
+  background: rgba(255,255,255,.06);
+  color: var(--cream);
+  backdrop-filter: blur(14px);
+}
+
+.reserve-primary:hover,
+.reserve-secondary:hover {
+  transform: translateY(-4px);
+}
+
+.reservation-card {
+  padding: 36px;
+  border-radius: 34px;
+  background: rgba(20, 13, 9, .78);
+  border: 1px solid rgba(255,244,223,.12);
+  backdrop-filter: blur(22px);
+  box-shadow: 0 35px 120px rgba(0,0,0,.45);
+}
+
+.reservation-card h3 {
+  font-size: 32px;
+  margin-bottom: 28px;
+}
+
+.reservation-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.reservation-row span {
+  color: var(--muted);
+}
+
+.reservation-row strong {
+  color: var(--gold);
+}
+
+.reservation-note {
+  margin-top: 28px;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255,122,26,.1);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .reservation-box {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-content h2 {
+    font-size: 46px;
+  }
+
+  .reservations {
+    background-attachment: scroll;
+  }
+}
