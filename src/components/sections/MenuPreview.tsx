@@ -1,4 +1,4 @@
-import "./MenuPreview.css";
+import "./menu-preview.css";
 
 const menu = [
   {
